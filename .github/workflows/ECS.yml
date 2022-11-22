@@ -25,7 +25,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: GO
+        container-name: go
         image: datapremium/go_ci:main
         environment-variables: |
           HOST=${{ secrets.DBHOST }}
